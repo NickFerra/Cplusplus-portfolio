@@ -1,0 +1,260 @@
+#include <iostream>
+
+int main() {
+
+//declaring variables
+std::string name = " ";
+int tool = 0;
+int scenario = 0;
+int page = 0;
+
+//Title
+std::cout << "=========================\n";
+std::cout << "  Recover the Artifact\n";
+std::cout << "=========================\n\n\n";
+
+//introduction 
+
+std::cout << "Welcome adventurer!\n\n";
+std::cout << "You have come at a most pressing time.\n\n";
+std::cout << "Jafar has stolen the most precious thing to this country!\n\n";
+std::cout << "THE ARTIFACT!\n\n";
+
+//page turning 
+std::cout << "(To turn the page please type the number of the page which is next)\n(This is page 1)\n";
+
+std::cin >> page;
+
+//***************************************************
+//***************************************************
+
+// End of page one/start of page 2.
+
+while (page != 2){
+  std::cout << "Please enter page 2\n";
+  std::cin >> page;
+}
+
+
+std::cout << "Lets start with your name?\n\n";
+std::cin >> name;
+
+std::cout << "\nNice to meet you " << name << "!\n\n";
+
+
+std::cout << name << " we need you to recover the artifact to save this country.\n\n";
+std::cout << "I have some tools which should be able to help you make it through the treacherous path you will need to take!\n\n";
+
+//given user choice of tool
+std::cout << "Tools:\n\n1) Torch\n2) Machete\n3) Shovel\n\n";
+
+std::cout << "(Enter the number of the tool which you wish to use)\n\n";
+
+std::cin >> tool;
+
+//outputting which tool the user has chosen. 
+if(tool == 1){
+std::cout << "You have chosen a torch. A wise choice and it will serve you well!\n\n";
+}
+
+else if (tool == 2){
+  std::cout << "You have chosen a machete. A strong choice and will slice through your task!\n\n";
+}
+
+else if (tool == 3){
+  std::cout << "You have chosen a shovel. A strange choice, maybe it will come in useful....\n\n";
+}
+else {
+  std::cout << "Please only pick from the list of tools. No cheating here.\n\n";
+}
+
+//*********************************************
+//*********************************************
+
+// end of page 2.
+std::cout << "(End of page 2. Move to page 3!)\n\n";
+std::cin >> page;
+
+while (page != 3){
+  std::cout << "Please enter page 3\n";
+  std::cin >> page;
+}
+
+//given user the choices of which path to take. 
+std::cout << "There are 3 paths which you can take:\n\n";
+std::cout << "1) Forbidden Forest\n2) Dense Jungle\n3) Scorching Desert\n\n";
+
+std::cout << "(Enter the number of the path you wish to take.\n";
+
+std::cin >> scenario;
+
+//if statement for telling the user which they have chosen. 
+if(scenario == 1){
+  std::cout << "You have chosen the Forbidden Forest! Things could get spooky!\n\n";
+}
+else if (scenario == 2){
+  std::cout << "You have chosen the Dense Jungle! Dont get yourself tangled!\n\n";
+}
+else if (scenario == 3){
+  std::cout << "You have chosen the Scorching Desert! Dont get stuck in the sand!\n\n";
+}
+
+//***************************************************
+//***************************************************
+
+//End of page 3
+std::cout << "(End of page 3. Move to page 4)\n\n";
+std::cin >> page;
+
+while (page != 4){
+  std::cout << "Please enter page 4\n";
+  std::cin >> page;
+}
+
+//THE FORBIDDEN FOREST
+if(scenario == 1){
+  std::cout << "You begin your journey along the narrow winding path towards the Forbidden Forest.\n\n";
+  std::cout << "As you start to get closer the air becomes cold and the wind starts to chill your bones.\n\n";
+  
+  //if statement for what tool the user has chosen. 
+  if(tool == 1){
+    std::cout << "You clutch on tightly to the torch which you have brought with you.\n\n";
+    std::cout << "As you proceed further the path becomes darker and darker, until you can no longer see the way forward!\n\n";
+    std::cout << "A noise from the darkness makes you jump! This is when you switch on your torch and can see that you have strayed from the path.\n\n";
+    std::cout << "You quickly return to the path and make it through the Forbidden Forest!\n\n";
+  }
+else if (tool == 2){
+  std::cout << "You clutch on tightly to your machete!\n\n";
+  std::cout << "As you proceed further the path becomes darker and darker, until you can no longer see the way forward!\n\n";
+  std::cout << "A noise from the darkness makes you jump! You raise your machete into the air to strike down whatever could be out there!\n\n";
+  std::cout << "The monster from the dark trips you and spills your guts on the damp ground!\n\n";
+  std::cout << "==============================\n";
+std::cout << "THE ADVENTURE IS OVER FOR YOU!\n";
+std::cout << "==============================\n\n";
+}
+else if (tool == 3){
+  std::cout << "You clutch tightly to your shovel!\n\n";
+  std::cout << "As you proceed further the path becomes darker and darker, until you can no longer see the way forward!\n\n";
+  std::cout << "A noise from the darkness makes you jump! You reach out with your shovel to try and find the path!\n\n";
+  std::cout << "The monster from the dark trips you and spills your guts on the damp ground!\n\n";
+  std::cout << "==============================\n";
+std::cout << "THE ADVENTURE IS OVER FOR YOU!\n";
+std::cout << "==============================\n\n";
+}
+
+}
+
+//THE DENSE JUNGLE
+if (scenario == 2){
+std::cout << "You begin your journey along the overgrown path which leads towards the Dense Jungle!\n\n";
+std::cout << "As you start to get closer the path becomes more dense with leaves and branches.\n\n";
+
+
+//if statement for which tool the user has chosen
+if (tool == 1){
+  std::cout << "You clutch on tightly to the torch which you have brought with you!\n\n";
+  std::cout << "As you move further into the Dense Jungle you start to become entangled within the branches.\n\n";
+  std::cout << "You dont notice that a branch starts to wrap around your neck and tighten!\n\n";
+  std::cout << "It keeps tightening and you attempt to hit it with the torch!\n\n";
+  std::cout << "This has no affect on the branch and you slowly fade away....\n\n";
+  std::cout << "==============================\n";
+std::cout << "THE ADVENTURE IS OVER FOR YOU!\n";
+std::cout << "==============================\n\n";
+}
+
+else if (tool == 2){
+  std::cout << "You clutch on tightly to your machete!\n\n";
+  std::cout << "As you move further into the Dense Jungle you start to become entangled within the branches.\n\n";
+  std::cout << "You dont notice that a branch starts to wrap around your neck and tighten!\n\n";
+  std::cout << "You quickly raise your machete into the air and swing with all your might!\n\n";
+  std::cout << "The branch breaks and you keep swinging at the other branches around you until you find you way through!\n\n";
+  std::cout << "You have made it through the Dense Jungle!\n\n";
+}
+
+else if (tool == 3){
+  std::cout << "You clutch tightly to your shovel!\n\n";
+  std::cout << "As you move further into the Dense Jungle you start to become entangled within the branches.\n\n";
+  std::cout << "You dont notice that a branch starts to wrap around your neck and tighten!\n\n";
+  std::cout << "You try to raise your shovel in the air to try and break the branch but are unable to lift the weight of it!\n\n";
+  std::cout << "The branch tightens until you slowly fade away....\n\n";
+  std::cout << "==============================\n";
+std::cout << "THE ADVENTURE IS OVER FOR YOU!\n";
+std::cout << "==============================\n\n";
+}
+}
+
+//THE SCORCHING SANDS
+if (scenario == 3){
+  std::cout << "You begin your journey along the charred and hot path to the Scorching Sands!\n\n";
+std::cout << "As you start to get closer the path becomes more cracked and the heat begins to overwhelm you.\n\n";
+
+
+if (tool == 1){
+  std::cout << "You clutch on tightly to the torch which you have brought with you!\n\n";
+  std::cout << "You move slowly forward along the path not sure where it will lead...\n\n";
+  std::cout << "The ground softens underneath you...\n\n";
+  std::cout << "You slowly start to sink within the sand.\n\n";
+  std::cout << "Falling deeper into the sand you wave your torch in the air hoping someone will see it and come to your rescue!\n\n";
+  std::cout << "The sand engulfs your helpless body underneath the sand for you to never be seen again...\n\n";
+  std::cout << "==============================\n";
+std::cout << "THE ADVENTURE IS OVER FOR YOU!\n";
+std::cout << "==============================\n\n";
+}
+
+else if (tool == 2){
+  std::cout << "You clutch on to your machete!\n\n";
+  std::cout << "You move slowly forward along the path not sure where it will lead...\n\n";
+  std::cout << "The ground softens underneath you...\n\n";
+  std::cout << "You slowly start to sink within the sand.\n\n";
+  std::cout << "Falling deeper into the sand you stab your machete into the sand to try and drag yourself out!\n\n";
+  std::cout << "The sharp blade cuts through the sand and offers no support.\n\n";
+  std::cout << "The sand engulfs your helpless body underneath the sand for you to never be seen again...\n\n";
+  std::cout << "==============================\n";
+std::cout << "THE ADVENTURE IS OVER FOR YOU!\n";
+std::cout << "==============================\n\n";
+}
+
+else if (tool == 3){
+  std::cout << "You clutch tightly to your shovel!\n\n";
+  std::cout << "You move slowly forward along the path not sure where it will lead...\n\n";
+  std::cout << "The ground softens underneath you...\n\n";
+  std::cout << "You slowly start to sink within the sand.\n\n";
+  std::cout << "You pull out your shovel and start to dig through the sand.\n\n";
+  std::cout << "After digging and digging the sand frees around you and you become released from the grip of it!\n\n";
+  std::cout << "You find your way back to the path and make it through the Scorching Sands.\n\n";
+}
+
+}
+
+
+//Rewarding the user for the correct choice. 
+if (scenario == 1 && tool == 1 || scenario == 2 && tool == 2 || scenario == 3 && tool == 3){
+
+//***********************************************
+//***********************************************
+
+//end of page 4
+std::cout << "(End of page 4. Move to page 5)\n";
+std::cin >> page;
+
+while (page != 5){
+  std::cout << "Please enter page 5\n";
+  std::cin >> page;
+}
+
+std::cout << "\n\nCONGRATULATIONS ADVETURER!!\n\n";
+std::cout << "You have made it through the difficult path which has been set out before you!\n\n";
+std::cout << "You have saved this country by recovering the ARTIFACT!!\n\n";
+
+}
+
+
+
+
+
+
+return 0;
+
+
+}
+

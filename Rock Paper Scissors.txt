@@ -1,0 +1,151 @@
+/*
+Rock, Paper, Scissors, Lizard, Spock ( The Big Bang Theory Version)
+*/
+#include <iostream>
+#include <stdlib.h>
+int main(){
+
+//set the variables for user and random number for the computer. 
+srand(time(NULL));
+
+const int computer = rand() % 5 + 1;
+
+int user = 0;
+
+//start of game
+std::cout << "=======================\n";
+std::cout << "   The Big Bang Game\n";
+std::cout << "=======================\n\n";
+
+std::cout << "Pick a number and see if you can win!\n\n";
+
+//Choices shown to user
+std::cout << "1) ✊ (Rock)\n";
+std::cout << "2) ✋ (Paper)\n";
+std::cout << "3) ✌️ (Scissors)\n";
+std::cout << "4) 🦎 (Lizard)\n";
+std::cout << "5) 🖖 (Spock)\n";
+
+
+std::cout << "Shoot!\n\n";
+
+//user input. 
+std::cin >> user;
+
+//decides which if statement to use out of the 5.
+
+if (user == 1){
+
+//if statement for rock
+
+if (user == 1 && computer == 1){
+  std::cout << "Draw!\nYou Both have chosen Rock.\n";
+}
+else if (user == 1 && computer == 2){
+  std::cout << "You Lose!\nPaper covers Rock.\n";
+}
+else if (user == 1 && computer == 3){
+  std::cout << "You win!\nRock crushes Scissors.\n";
+}
+else if (user == 1 && computer == 4){
+  std::cout << "You win!\nRock crushes Lizard.\n";
+}
+else if (user == 1 && computer == 5){
+  std::cout << "You lose!\nSpock vaporises Rock.\n";
+}
+
+}
+
+else if (user == 2){
+
+//if statement for paper
+if (user == 2 && computer == 1){
+  std::cout << "You win!\nPaper covers Rock.\n";
+}
+else if (user == 2 && computer == 2){
+  std::cout << "Draw!\nYou have both chosen Paper\n";
+}
+else if (user == 2 && computer == 3){
+  std::cout << "You lose!\nScissor cuts Paper.\n";
+}
+else if (user == 2 && computer == 4){
+  std::cout << "You lose!\nLizard eats Paper.\n";
+}
+else if (user == 2 && computer == 5){
+  std::cout << "You win!\nPaper disproves Spock.\n";
+}
+
+}
+
+else if (user == 3){
+
+//if statement for scissors
+if (user == 3 && computer == 1){
+  std::cout << "You lose!\nRock crushes Scissors.\n";
+}
+else if (user == 3 && computer == 2){
+  std::cout << "You win!\nScissor cuts Paper.\n";
+}
+else if (user == 3 && computer == 3){
+  std::cout << "Draw!\nYou have both chosen Scissors.\n";
+}
+else if (user == 3 && computer == 4){
+  std::cout << "You win!\nScissors decapitate Lizard.\n";
+}
+else if (user == 3 && computer == 5){
+  std::cout << "You lose!\nSpock smashes Scissors.\n";
+}
+
+}
+
+else if (user == 4){
+
+//if statement for Lizard
+if (user == 4 && computer == 1){
+  std::cout << "You lose!\nRock crushes Lizard.\n";
+}
+else if (user == 4 && computer == 2){
+  std::cout << "You win!\nLizard eats Paper.\n";
+}
+else if (user == 4 && computer == 3){
+  std::cout << "You lose!\nScissors decapitate Lizard.\n";
+}
+else if (user == 4 && computer == 4){
+  std::cout << "Draw!\nYou have both chosen Lizard.\n";
+}
+else if (user == 4 && computer == 5){
+  std::cout << "You win!\nLizard poisons Spock.\n";
+}
+
+}
+
+else if(user == 5){
+
+//if statement for spock
+if (user == 5 && computer == 1){
+  std::cout << "You win!\nSpock vaporizes Rock.\n";
+}
+else if (user == 5 && computer == 2){
+  std::cout << "You lose!\nPaper disproves Spock.\n";
+}
+else if (user == 5 && computer == 3){
+  std::cout << "You win!\nSpock smashes Scissors.\n";
+}
+else if (user == 5 && computer == 4){
+  std::cout << "You lose!\nLizard poisons Spock.\n";
+}
+else if (user == 5 && computer == 5){
+  std::cout << "Draw!\nYou have both chosen Spock.\n";
+}
+
+}
+
+else{
+  std::cout << "Incorrect input!\n";
+}
+
+}
+
+
+
+

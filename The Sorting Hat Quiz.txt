@@ -1,0 +1,187 @@
+#include <iostream>
+
+int main() {
+
+  // declaring variables
+
+
+int gryffindor = 0;
+int hufflepuff = 0;
+int ravenclaw = 0;
+int slytherin = 0;
+
+int answer1 = 0, answer2 = 0, answer3 = 0, answer4 = 0;
+
+// Start of quiz
+
+std::cout << "The Sorting Hat Quiz. \n\n";
+
+//Asking first question
+
+std::cout << "Q1) When I'm dead, I want people to remember me as: \n\n";
+
+std::cout << "1) The Good\n2) The Great\n3) The Wise\n4) The Bold\n\n";
+
+//Receiving input from user for first question
+
+std::cin >> answer1;
+
+//if statement for adding the answer to each house. 
+
+switch(answer1){
+
+case 1:
+hufflepuff++;
+std::cout << "\n1 Point to Hufflepuff.\n";
+break;
+
+case 2:
+slytherin++;
+std::cout << "\n1 Point to Slytherin.\n";
+break;
+
+case 3:
+ravenclaw++;
+std::cout << "\n1 Point to Ravenclaw.\n";
+break;
+
+case 4:
+gryffindor++;
+std::cout << "\n1 Point to Gryffindor.\n";
+break;
+
+default:
+std::cout << "\nInvalid answer.\n";
+break;
+
+}
+
+//Question 2
+
+std::cout << "\nQ2) Dawn or Dusk?\n";
+
+std::cout << "\n1) Dawn\n2) Dusk\n";
+
+//user input
+std::cin >> answer2;
+
+//If statement for answer.
+
+if (answer2 == 1) {
+gryffindor++;
+ravenclaw++;
+std::cout << "\n1 Point to Gryffindor and Ravenclaw.\n";
+}
+else if (answer2 == 2){
+ hufflepuff++;
+ slytherin++;
+ std::cout << "\n1 Point to Hufflepuff and Slytherin.\n";
+}
+else{
+  std::cout << "\nInvalid answer.\n";
+}
+
+//Question 3
+
+std::cout << "\nQ3) Which kind of instrument most pleases your ear?\n\n";
+
+std::cout << "1) The Violin\n2) The Trumpet\n3) The Piano\n4) The Drum\n";
+
+//user input 
+
+std::cin >> answer3;
+
+// if statement
+switch (answer3){
+
+case 1:
+slytherin++;
+std::cout << "\n1 Point to Slytherin.\n";
+break;
+
+case 2:
+hufflepuff++;
+std::cout << "\n1 Point to Hufflepuff.\n";
+break;
+
+case 3:
+ravenclaw++;
+std::cout << "\n1 Point to Ravenclaw.\n";
+break;
+
+case 4:
+gryffindor++;
+std::cout << "\n1 Point to Gryffindor.\n";
+break;
+
+default:
+std::cout << "\nInvalid answer.\n";
+break;
+}
+
+//Question 4
+std::cout << "\nQ4) Which road tempts you most?\n\n";
+
+std::cout << "1) The wide, sunny grassy lane\n2) The narrow, dark, lantern-lit alley\n3) The twisting, leaf-strewn path through woods\n4) The cobbled street lined (ancient buildings)\n";
+
+//user input
+std::cin >> answer4;
+
+//If statement
+switch (answer4){
+
+  case 1:
+  hufflepuff++;
+  std::cout << "\n1 Point to Hufflepuff.\n";
+  break;
+
+  case 2:
+  slytherin++;
+  std::cout << "\n1 Point to Slytherin.\n";
+  break;
+
+  case 3:
+  gryffindor++;
+  std::cout << "\n1 Point to Gryffindor.\n";
+  break;
+
+  case 4:
+  ravenclaw++;
+  std::cout << "\n1 Point to Ravenclaw.\n";
+  break;
+
+  default:
+  std::cout << "\nInvalid input.\n";
+
+}
+
+std::cout << "\nYou have been placed in... \n\n";
+
+//new variable
+int max = 0;
+//declaring new string.
+std::string house;
+
+//if statement to find out which house has most points. 
+if (gryffindor > max) {
+  max = gryffindor;
+  house = "Gryffindor";
+}
+if (hufflepuff > max) {
+  max = hufflepuff;
+  house = "Hufflepuff";
+}
+if (ravenclaw > max) {
+  max = ravenclaw;
+  house = "Ravenclaw";
+}
+if (slytherin > max) {
+  max = slytherin;
+  house = "Slytherin";
+}
+
+std::cout << house << "!\n";
+
+return 0;
+
+}
